@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tweeter <img src="https://img.shields.io/badge/Build%20with-Vite-61dbfb?style=popout&logo=nextdotjs">
 
-## Getting Started
+## Contents
 
-First, run the development server:
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation-for-development)
+- [Tech Stack](#tech-stack)
+- [Screenshoots](#screenshoots)
+- [Tweeter](#tweeter)
 
+## Description
+
+Tweeter is a Twitter clone web application that brings the essence of Twitter to your fingertips. Built with Next.js, Tailwind CSS, Node.js/Express.js, and MongoDB/Mongoose, Tweeter offers a familiar Twitter-like experience with a twist. It leverages Clerk for user and community management and uses shadcn/ui for form templates.
+
+## Features
+
+### User Onboarding
+
+When a new user signs up, Tweeter ensures a smooth onboarding experience. Users can set their profile image, name, username, and add a bio to personalize their profiles.
+
+### Create Posts
+
+Users have the ability to create posts both as individual users and community members. They can create communities and invite other members via email.
+
+### Post Replies
+
+Tweeter allows users to engage with each other by replying to posts. This feature fosters conversations and interactions among users.
+
+### Notifications
+
+Receive notifications when other users reply to your posts. Stay updated and engaged with your audience.
+
+## Installation for Development
+
+Use the package manager [npm](https://www.npmjs.com/get-npm) to install all required dependecies.
+```bash
+npm install
+```
+and then:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**:
+  - Framework: Next.js
+  - Styling: Tailwind CSS
+  - UI Library: shadcn/ui (for form templates)
+  - Authentication: Clerk (supports GitHub and Google login)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Backend**:
+  - Server: Node.js/Express.js
+  - Database: MongoDB with Mongoose
 
-## Learn More
+## Screenshoots
 
-To learn more about Next.js, take a look at the following resources:
+<div align="center">
+    <img width="100%" src="./public/assets/Tweeter-onboard.png">
+    <img width="100%" src="./public/assets/Tweeter.png">
+    <img width="100%" src="./public/assets/Tweeter-reply.png">
+    <img width="100%" src="./public/assets/Tweeter-community.png">
+</div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Demo Crowdfunding Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Let's try it.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<a href="https://car-showcase-henna.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Tweeter%20Page-Link%20Demo-blue.svg?style=popout&logo=googlechrome"/>
+</a>
